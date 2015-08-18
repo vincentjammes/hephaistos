@@ -2,37 +2,66 @@
 <html>
     <head>
         <link type="text/css" rel="stylesheet" href="assets/main.css" />
-        <style>
-        div.dice{
-            float:left;
-            width:32px;
-            background:#F5F5F5;
-            border:#999 1px solid;
-            padding:10px;
-            font-size:24px;
-            text-align:center;
-            margin:5px;
-        }
-        </style>
-        <script>
-        function rollDice(){
-            var die1 = document.getElementById("die1");
-            var die2 = document.getElementById("die2");
-            var status = document.getElementById("status");
-            var d1 = Math.floor(Math.random() * 6) + 1;
-            var d2 = Math.floor(Math.random() * 6) + 1;
-            var diceTotal = d1 + d2;
-            die1.innerHTML = d1;
-            die2.innerHTML = d2;
-            status.innerHTML = "You rolled "+diceTotal+".";
-        }
-        </script>
     </head>
     <body>
-        <div id="die1" class="dice">0</div>
-        <div id="die2" class="dice">0</div>
-        <button onclick="rollDice()">Roll Dice</button>
+        <form> 
+        <input type="text" name="launchdice" id="dice-number" value="Combien de d&eacute;s ?" /> 
+        <input type="button" value="Lancer" onclick="getdice();" /> 
+        </form>
+        <button onclick="rollDice()" class="myButton">Roll Dice</button>
         <h2 id="status" style="clear:left;"></h2>
+
+        <!-- Dice -->
+        <div class="dice-container">  
+            <div class="dice dice-1">  
+                <div class="dice-indicator indicator-1"></div>  
+            </div>  
+        </div>  
+  
+        <div class="dice-container">  
+            <div class="dice dice-2">  
+                <div class="dice-indicator indicator-1"></div>  
+                <div class="dice-indicator indicator-2"></div>  
+            </div>  
+        </div>  
+  
+        <div class="dice-container">  
+            <div class="dice dice-3">  
+                <div class="dice-indicator indicator-1"></div>  
+                <div class="dice-indicator indicator-2"></div>  
+                <div class="dice-indicator indicator-3"></div>  
+            </div>  
+        </div>  
+  
+        <div class="dice-container">  
+            <div class="dice dice-4">  
+                <div class="dice-indicator indicator-1"></div>  
+                <div class="dice-indicator indicator-2"></div>  
+                <div class="dice-indicator indicator-3"></div>  
+                <div class="dice-indicator indicator-4"></div>  
+            </div>  
+        </div>  
+          
+        <div class="dice-container">  
+            <div class="dice dice-5">  
+                <div class="dice-indicator indicator-1"></div>  
+                <div class="dice-indicator indicator-2"></div>  
+                <div class="dice-indicator indicator-3"></div>  
+                <div class="dice-indicator indicator-4"></div>  
+                <div class="dice-indicator indicator-5"></div>  
+            </div>  
+        </div>  
+          
+        <div class="dice-container">  
+            <div class="dice dice-6">  
+                <div class="dice-indicator indicator-1"></div>  
+                <div class="dice-indicator indicator-2"></div>  
+                <div class="dice-indicator indicator-3"></div>  
+                <div class="dice-indicator indicator-4"></div>  
+                <div class="dice-indicator indicator-5"></div>  
+                <div class="dice-indicator indicator-6"></div>  
+            </div>  
+        </div>  
 
         <script type="text/javascript" src="assets/main.js"></script>
     </body>
