@@ -4,19 +4,18 @@
         <link type="text/css" rel="stylesheet" href="assets/main.css" />
     </head>
     <body>
-        <form> 
-        <input type="text" name="launchdice" id="dice-number" value="Combien de d&eacute;s ?" /> 
-        <input type="button" value="Lancer" onclick="getdice();" /> 
+        <form id="form1"> 
+        <input type="number" name="howmuch" value="1" min="1" /> 
+        <input type="button" value="Roll Dice" onclick="getDice()" class="myButton"; /> 
         </form>
-        <button onclick="rollDice()" class="myButton">Roll Dice</button>
         <h2 id="status" style="clear:left;"></h2>
-
         <!-- Dice -->
         <div class="dice-container">  
             <div class="dice dice-1">  
-                <div class="dice-indicator indicator-1"></div>  
-            </div>  
-        </div>  
+                <div class="dice-indicator indicator-1"></div> 
+            </div>
+        </div>
+          
   
         <div class="dice-container">  
             <div class="dice dice-2">  
