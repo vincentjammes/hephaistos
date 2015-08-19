@@ -1,5 +1,15 @@
 function getDice() {
-	document.getElementById("form1").submit();
+	var $input = $('[name=howmuch]');
+	return $input.val();
 };
 
-console.log(getDice)
+
+$(function() {
+
+	$("#form1").on('submit', function (event) {
+		event.preventDefault();
+		var value = getDice();
+		console.log(value);
+	})
+
+});
