@@ -1,8 +1,21 @@
 body {
-	background-color: #4682B4;
+	background-color: #084d66;
 }
 
-div {
+h2 {
+	font-family: Arial;
+	color: white;
+	margin: 2% 0% 2% 33%;
+}
+
+.slide {
+	text-align: center;
+	background-color: white;
+	font-size: 20px;
+}
+
+
+#phrase {
 	margin: 10% 10% 2% 10%;
 	padding: 20px;
 	text-align: center;
@@ -10,10 +23,7 @@ div {
 	font-size: 20px;
 }
 
-h1 {
-	color: navy;
-		margin: 2% 0% 2% 33%;
-}
+/*Button*/
 
 .myButton {
 	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
@@ -41,7 +51,7 @@ h1 {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #ffee66;
 	margin: 0% 0% 0% 45%;
-    font-family: Gill sans, helvetica, sans-serif;
+    font-family: 'Gill sans', helvetica, sans-serif;
 }
 .myButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
@@ -56,4 +66,49 @@ h1 {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+/*Toggle*/
+
+.pull-me{
+    -webkit-box-shadow: 0 0 8px #258aae;
+    -moz-box-shadow: 0 0 8px #258aae;
+    box-shadow: 0 0 8px #258aae;
+    cursor:pointer;
+}
+.panel {
+	background: #aed7e8;
+    background-size:90% 90%;
+    height:300px;
+	display:none;
+    font-family:garamond,serif;
+}
+.panel p{
+    text-align:center;
+}
+.slide {
+	margin:0;
+	padding:0;
+	border-top:solid 2px #289bc4;
+}
+.pull-me {
+	text-align: center;
+	display:block;
+    position:relative;
+    right:-25px;
+    width:150px;
+    height:20px;
+	font-family:arial,sans-serif;
+    font-size:14px;
+	color:#ffffff;
+    background:#289bc4;
+	text-decoration:none;
+	border-radius: 5px;
+    -moz-border-bottom-left-radius:5px;
+    -moz-border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.pull-me p {
+    text-align:center;
 }

@@ -14,3 +14,9 @@ function getPhrase(){
                  
                 document.getElementById("phrase").innerHTML = listePhrases[Math.floor(Math.random() * listePhrases.length)];
 };
+
+$(document).ready(function() {
+    $(".pull-me").click(function() {
+        $(".panel").slideToggle('slow');
+    });    
+});
