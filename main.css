@@ -18,6 +18,10 @@ p {
 
 p a {
 	display: inline-block;
+	float: right;
+	position: relative;
+	right: 25%;
+    margin-right: 10%;
 }
 
 .myButton {
