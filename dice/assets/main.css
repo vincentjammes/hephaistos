@@ -1,175 +1,21 @@
 /*General*/
 
 body {
-	background: #E0D6B9;
-}
-
-div.dice {
-            float:left;
-            width:32px;
-            background:#F5F5F5;
-            border:#999 1px solid;
-            padding:10px;
-            font-size:24px;
-            text-align:center;
-            margin:5px;
+	background: #0d5c7c;
+    font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 input {
-    font-size: 20px;
+    padding: 12px;
+    margin: 2% 0% 2% 43%;
     text-align: center;
-    font-family: fantasy, helvetica, sans-serif;
 }
 
-/*Dice*/
-
-div.dice {  
-    color: white;  
-    height: 100px;  
-    width: 100px;  
-    border: none;
-    border-radius:15px;  
-    -webkit-border-radius:15px;  
-    background: -moz-radial-gradient(right top, circle, #FFFFFF, #F6F6F6);  
-    background: -webkit-radial-gradient(right top, circle, #FFFFFF, #F6F6F6);  
-    -webkit-box-shadow: inset 2px -2px 3px 3px #EEEEEE;  
-    box-shadow: inset 2px -2px 3px 3px #EEEEEE;  
-}  
-
-div.dice div.dice-indicator {  
-    width: 18px;  
-    height: 18px;  
-    -webkit-box-shadow: inset 0 0 1px 1px #111111;  
-    box-shadow: inset 0 0 1px 1px #111111;  
-    background: -moz-radial-gradient(left bottom, circle, #FFFFFF, #000000, #000000);   
-    background: -webkit-radial-gradient(left bottom, circle, #FFFFFF, #000000, #000000);  
-    -moz-border-radius: 9px;  
-    -webkit-border-radius: 9px;  
-    border-radius: 9px;  
-    position: relative;  
-}  
-
-div.dice-1 div.indicator-1, div.dice-5 div.indicator-1, div.dice-3 div.indicator-1 {  
-    top: 41px; /* 41 */  
-    left: 41px; /* 41 */  
-}  
-  
-div.dice-5 div.indicator-2, div.dice-3 div.indicator-2 {  
-    top: -2px; /* 16 */  
-    left: 16px; /* 16 */  
-}  
-  
-div.dice-5 div.indicator-3 {  
-    top: -20px; /* 16 */  
-    left: 66px; /* 66 */  
-}  
-  
-div.dice-5 div.indicator-4 {  
-    top: 12px; /* 66 */  
-    left: 16px; /* 16 */  
-}  
-  
-div.dice-5 div.indicator-5 {  
-    top: -6px; /* 66 */  
-    left: 66px; /* 66 */  
-}  
-  
-div.dice-2 div.indicator-1, div.dice-4 div.indicator-1 {  
-    top: 16px; /* 16 */  
-    left: 16px; /* 16 */  
-}  
-  
-div.dice-2 div.indicator-2, div.dice-4 div.indicator-2 {  
-    top: 48px; /* 66 */  
-    left: 66px; /* 66 */  
-}  
-  
-div.dice-3 div.indicator-3 {  
-    top: 32px; /* 66 */  
-    left: 66px; /* 66 */  
-}  
-  
-div.dice-4 div.indicator-3 {  
-    top: -20px; /* 16 */  
-    left: 66px; /* 66 */  
-}  
-  
-div.dice-4 div.indicator-4 {  
-    top: 12px; /* 66 */  
-    left: 16px; /* 16 */  
-}  
-  
-div.dice-6 div.indicator-1 {  
-    top: 16px; /* 16 */  
-    left: 16px; /* 16 */  
-}  
-  
-div.dice-6 div.indicator-2 {  
-    top: 23px; /* 41 */  
-    left: 16px; /* 16 */  
-}  
-  
-div.dice-6 div.indicator-3 {  
-    top: 30px; /* 66 */  
-    left: 16px; /* 16 */  
-}  
-  
-div.dice-6 div.indicator-4 {  
-    top: -38px; /* 16 */  
-    left: 66px; /* 66 */  
-}  
-  
-div.dice-6 div.indicator-5 {  
-    top: -31px; /* 41 */  
-    left: 66px; /* 66 */  
-}  
-  
-div.dice-6 div.indicator-6 {  
-    top: -24px; /* 66 */  
-    left: 66px; /* 66 */  
-}  
-
-/*Buttons*/
-
-.myButton {
-	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	-webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	box-shadow:inset 0px 1px 3px 0px #91b8b3;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
-	background:-moz-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:-webkit-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:-o-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:-ms-linear-gradient(top, #768d87 5%, #6c7c7c 100%);
-	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#768d87', endColorstr='#6c7c7c',GradientType=0);
-	background-color:#768d87;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	border-radius:5px;
-	border:1px solid #566963;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:11px 23px;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #2b665e;
-	margin: 1% 0% 0% 1%;
-    font-family: fantasy, helvetica, sans-serif;
+button {
+    margin-left: 5px;
 }
-.myButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
-	background:-moz-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
-	background:-webkit-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
-	background:-o-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
-	background:-ms-linear-gradient(top, #6c7c7c 5%, #768d87 100%);
-	background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#6c7c7c', endColorstr='#768d87',GradientType=0);
-	background-color:#6c7c7c;
-}
-.myButton:active {
-	position:relative;
-	top:0.5px;
+
+h2 {
+    color: white;
+    margin: 2% 0% 2% 33%;
 }

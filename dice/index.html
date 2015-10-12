@@ -1,66 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="http://tapestry.wisembly.com/css/tapestry.css" />
         <link type="text/css" rel="stylesheet" href="assets/main.css" />
     </head>
     <body>
+        <h2>Combien de dés souhaitez-vous lancer ?</h2>
         <form id="form1"> 
             <input type="number" name="howmuch" value="1" min="1" /> 
-            <input type="submit" value="Roll Dice" class="myButton"; />
+            <button type="submit" class="Btn Btn--validate">Lancer</button>
         </form>
         <h2 id="status" style="clear:left;"></h2>
-        <!-- Dice -->
-        <div class="dice-container">  
-            <div class="dice dice-1">  
-                <div class="dice-indicator indicator-1"></div> 
-            </div>
-        </div>
-          
-  
-        <div class="dice-container">  
-            <div class="dice dice-2">  
-                <div class="dice-indicator indicator-1"></div>  
-                <div class="dice-indicator indicator-2"></div>  
-            </div>  
-        </div>  
-  
-        <div class="dice-container">  
-            <div class="dice dice-3">  
-                <div class="dice-indicator indicator-1"></div>  
-                <div class="dice-indicator indicator-2"></div>  
-                <div class="dice-indicator indicator-3"></div>  
-            </div>  
-        </div>  
-  
-        <div class="dice-container">  
-            <div class="dice dice-4">  
-                <div class="dice-indicator indicator-1"></div>  
-                <div class="dice-indicator indicator-2"></div>  
-                <div class="dice-indicator indicator-3"></div>  
-                <div class="dice-indicator indicator-4"></div>  
-            </div>  
-        </div>  
-          
-        <div class="dice-container">  
-            <div class="dice dice-5">  
-                <div class="dice-indicator indicator-1"></div>  
-                <div class="dice-indicator indicator-2"></div>  
-                <div class="dice-indicator indicator-3"></div>  
-                <div class="dice-indicator indicator-4"></div>  
-                <div class="dice-indicator indicator-5"></div>  
-            </div>  
-        </div>  
-          
-        <div class="dice-container">  
-            <div class="dice dice-6">  
-                <div class="dice-indicator indicator-1"></div>  
-                <div class="dice-indicator indicator-2"></div>  
-                <div class="dice-indicator indicator-3"></div>  
-                <div class="dice-indicator indicator-4"></div>  
-                <div class="dice-indicator indicator-5"></div>  
-                <div class="dice-indicator indicator-6"></div>  
-            </div>  
-        </div>  
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="assets/main.js"></script>
     </body>
