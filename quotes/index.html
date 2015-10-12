@@ -2,18 +2,29 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="http://tapestry.wisembly.com/css/tapestry.css" />
         <link type="text/css" rel="stylesheet" href="assets/main.css" />
     </head>
     <body>
-        <div class="panel">
-            <p>Voici la r&eacute;ponse !</p>
-                <p><img src='' id="picture" /></p>
-
+        <div id="js-RightPanel" class="Panel Panel--r" aria-labelledby="rightPanel" aria-hidden="true">
+            <header class="Panel-header">
+                <h3 class="Panel-title" id="title">Voici la réponse</h3>
+                <button id="js-CloseRightPanel" class="Btn Btn--raw PanelHeader-btn u-push" aria-label="close">
+                <i class="Icon Icon--cross"></i>
+                </button>
+            </header>
+            <div class="Panel-content">
+                <p class="u-mgt--0"><img src='' id="picture" /></p>
+            </div>
         </div>
-        <p class="slide"><div class="pull-me">Réponse</div></p>
-    	<h2>Dans quel film peut-on entendre ?</h2>
-        <div id="phrase">Cliquez sur Jouer ...</div>
-    	<button onclick="getQuotes()" class="myButton">Jouer</button>
+        <div id="js-RightPanelOverlay" class="Overlay" aria-hidden="true"></div>
+
+        
+        <h2>Dans quel film peut-on entendre ?</h2>
+        <div id="phrase">Cliquez sur Jouer ...</div>        
+        <p><button class="Btn Btn--validate" onclick="getQuotes()">Jouer</button>
+            <button id="js-LaunchRightPanel" class="Btn Btn--primary Btn--outline">Réponse</button>
+        </p>
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="assets/main.js"></script>
     </body>
