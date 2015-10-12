@@ -58,19 +58,17 @@ function getQuotes() {
     $('#title').html(whichQuote.title);
 };
 
-var body = document.getElementsByTagName("body");
+$("#js-LaunchRightPanel").click(function() {
+    $('body').addClass('u-ovh');
+    $('#js-RightPanel').attr("aria-hidden", "false");
+    $('#js-RightPanelOverlay').attr("aria-hidden", "false");
+});
 
- document.getElementById("js-LaunchRightPanel").onclick = function () {
-   document.getElementById("js-RightPanel").setAttribute("aria-hidden", "false");
-   document.getElementById("js-RightPanelOverlay").setAttribute("aria-hidden", "false");
- }
-
- document.getElementById("js-CloseRightPanel").onclick = function () {
-   document.getElementById("js-RightPanel").setAttribute("aria-hidden", "true");
-   document.getElementById("js-RightPanelOverlay").setAttribute("aria-hidden", "true");
- }
-
-
+$("#js-CloseRightPanel").click(function() {
+    $('body').removeClass('u-ovh');
+    $('#js-RightPanel').attr("aria-hidden", "true");
+    $('#js-RightPanelOverlay').attr("aria-hidden", "true");
+});
 
 
 
