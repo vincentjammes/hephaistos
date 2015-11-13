@@ -3,42 +3,39 @@ function getDice() {
 	return $input.val();
 };
 
+function getMoreThan() {
+	var $input = $('[name=morethan]');
+	return $input.val();
+};
+
 function rollDice(n){ 
 	var dice = {};
 	for (var i=1 ; i<=n ; i++ ){
         dice[i] = Math.ceil(6*Math.random());
-    }
-    return dice;
+	}
+  	return dice;
 };
 
-var sortDice = {"1":0, "2":0, "3":0, "4":0, "5":0, "6":0}
-for (var a in sortDice) {
-	switch(sortDice) {
-		case 1: 
-		sortDice["1"]++
-		break;
-
-		case 2: 
-		sortDice["2"]++
-		break;
-
-		case 3: 
-		sortDice["3"]++
-		break;
-
-		case 4: 
-		sortDice["4"]++
-		break;
-
-		case 5: 
-		sortDice["5"]++
-		break;
-
-		case 6: 
-		sortDice["6"]++
+function updateSortDice (throwDice) {
+	var sortDice = {"1":0, "2":0, "3":0, "4":0, "5":0, "6":0};
+	for (var key in throwDice) {
+		var value = throwDice[key];
+		sortDice[value]++;
 	}
-}
+	console.log("sortDice", sortDice);
+	return sortDice;
+};
 
+function computeCount (sortDice, moreThan){
+	var count = 0;
+	for (var face in sortDice) {
+		var value = sortDice[face];
+		if (parseInt(face) >= moreThan) {
+			count += value; 
+		}
+	}
+	return count;
+};
 
 $(function() {
 
@@ -46,12 +43,11 @@ $(function() {
 		event.preventDefault();
 		var value = getDice();
 		console.log(value);
-		var throwDice = rollDice(value)
-		console.log(throwDice);
-		console.log(sortDice);
+		var throwDice = rollDice(value);
+		console.log("throwDice", throwDice);
+		var sortDice = updateSortDice(throwDice);
+		var count = computeCount(sortDice, 4);
+		console.log("count", count);
 	})
 });
-
-
-
 

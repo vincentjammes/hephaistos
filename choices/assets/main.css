@@ -1,0 +1,21 @@
+body {
+	background-color: #07698d;
+	font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+	color: white;
+	margin: 10%;
+}
+
+h2 {
+	color: white;
+	text-align: center;
+}
+
+.Collection {
+	font-size: 18px;
+	color: white;
+	background-color: white;
+}
+
+.Btn {
+	margin: 2% 0% 2% 45%;
+}
