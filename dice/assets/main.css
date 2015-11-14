@@ -10,9 +10,23 @@ body {
     margin: 2% 0% 2% 43%;
     text-align: center;
     width: 150px;
+    background-color: white;
 }
 
 h2, h3 {
     color: white;
     text-align: center;
+}
+
+
+em {
+	font-weight: lighter;
+}
+
+#count {
+	padding: 12px;
+    text-align: center;
+    width: 150px;
+    background-color: white;
+    margin: 2% 0% 2% 43%;
 }

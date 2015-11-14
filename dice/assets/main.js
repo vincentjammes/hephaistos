@@ -48,6 +48,7 @@ $(function() {
 		var sortDice = updateSortDice(throwDice);
 		var moreThan = getMoreThan();
 		var count = computeCount(sortDice, moreThan);
+		$('#count').html(count);
 		console.log("count", count);
 	})
 });
