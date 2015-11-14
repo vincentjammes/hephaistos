@@ -5,17 +5,14 @@ body {
     font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-input {
+.input {
     padding: 12px;
     margin: 2% 0% 2% 43%;
     text-align: center;
+    width: 150px;
 }
 
-button {
-    margin-left: 5px;
-}
-
-h2 {
+h2, h3 {
     color: white;
-    margin: 2% 0% 2% 33%;
+    text-align: center;
 }

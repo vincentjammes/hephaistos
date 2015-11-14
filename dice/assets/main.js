@@ -1,10 +1,10 @@
 function getDice() {
-	var $input = $('[name=howmuch]');
-	return $input.val();
+	var $input = $('[name=howMuch]');
+   	return $input.val();
 };
 
 function getMoreThan() {
-	var $input = $('[name=morethan]');
+	var $input = $('[name=moreThan]');
 	return $input.val();
 };
 
@@ -41,13 +41,13 @@ $(function() {
 
 	$("#form1").on('submit', function (event) {
 		event.preventDefault();
-		var value = getDice();
-		console.log(value);
-		var throwDice = rollDice(value);
+		var valueGetDice = getDice();
+		console.log("valueGetDice", valueGetDice);
+		var throwDice = rollDice(valueGetDice);
 		console.log("throwDice", throwDice);
 		var sortDice = updateSortDice(throwDice);
-		var count = computeCount(sortDice, 4);
+		var moreThan = getMoreThan();
+		var count = computeCount(sortDice, moreThan);
 		console.log("count", count);
 	})
 });
-
