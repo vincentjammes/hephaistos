@@ -5,14 +5,6 @@ body {
     font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.input {
-    padding: 12px;
-    margin: 2% 0% 2% 43%;
-    text-align: center;
-    width: 150px;
-    background-color: white;
-}
-
 h2, h3 {
     color: white;
     text-align: center;
@@ -20,13 +12,37 @@ h2, h3 {
 
 
 em {
-	font-weight: lighter;
+    font-weight: lighter;
 }
 
-#count {
-	padding: 12px;
+div, .number {
     text-align: center;
+}
+
+.input, .eachSide, .results {
+    padding: 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+.input {
     width: 150px;
     background-color: white;
-    margin: 2% 0% 2% 43%;
+
 }
+
+.eachSide, .results {
+    width: 100px;
+}
+
+.eachSide {
+    background-color: #a1a9ae;
+}
+
+.results {
+    background-color: white;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+

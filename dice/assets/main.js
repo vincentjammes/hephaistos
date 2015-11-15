@@ -1,3 +1,8 @@
+// function bloque(champ){
+//     champ.disabled = true; // le bloque
+//     setTimeout(function(){champ.disabled=false;}, 3000); // au bout de 3s le débloque
+// }
+
 function getDice() {
 	var $input = $('[name=howMuch]');
    	return $input.val();
@@ -46,6 +51,12 @@ $(function() {
 		var throwDice = rollDice(valueGetDice);
 		console.log("throwDice", throwDice);
 		var sortDice = updateSortDice(throwDice);
+		$('#face1').html(sortDice[1]);
+		$('#face2').html(sortDice[2]);
+		$('#face3').html(sortDice[3]);
+		$('#face4').html(sortDice[4]);
+		$('#face5').html(sortDice[5]);
+		$('#face6').html(sortDice[6]);
 		var moreThan = getMoreThan();
 		var count = computeCount(sortDice, moreThan);
 		$('#count').html(count);

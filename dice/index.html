@@ -9,12 +9,33 @@
         <h2>The Dice Project</h2>
         <form id="form1">
             <h3>Souhaitez-vous filtrer les résultats ? <em>(ex : 2+, 4+,etc.)</em></h3>
-            <input type="number" class="input" name="moreThan" value="1" min="1" max="6"/>
-            <p id="count">Résultats n+</p>   
+            <div>
+                <input type="number" class="input" name="moreThan" value="1" min="1" max="6"/>
+                <p class="results" id="count">Résultats n+</p>
+            </div>
             <h3>Combien de dés souhaitez-vous lancer ?</em></h3>
-            <input type="number" class="input" name="howMuch" value="1" min="1" /> 
-            <button type="submit" class="Btn Btn--validate" id="timer">Lancer</button>
+            <div>
+                <input type="number" class="input" name="howMuch" value="1" min="1" /> 
+                <button type="submit" class="Btn Btn--validate" onclick="bloque(this)">Lancer</button>
+            <div>
         </form>
+
+        <div>
+            <p class="eachSide"><strong>#1</strong></p>
+            <p class="results" id="face1" >Résultats</p>
+            <p class="eachSide"><strong>#2</strong></p>
+            <p class="results" id="face2">Résultats</p> 
+            <p class="eachSide"><strong>#3</strong></p>
+            <p class="results" id="face3">Résultats</p>
+            <br>
+            <p class="eachSide"><strong>#4</strong></p>
+            <p class="results" id="face4">Résultats</p>  
+            <p class="eachSide"><strong>#5</strong></p>
+            <p class="results" id="face5">Résultats</p>   
+            <p class="eachSide"><strong>#6</strong></p>
+            <p class="results" id="face6">Résultats</p>
+        </div>
+
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="assets/main.js"></script>
     </body>
