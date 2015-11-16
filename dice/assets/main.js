@@ -59,7 +59,7 @@ $(function() {
 		$('#face6').html(sortDice[6]);
 		var moreThan = getMoreThan();
 		var count = computeCount(sortDice, moreThan);
-		$('#count').html(count);
+		$('#count').html("Il y a "+ count +" résultats correspondant à ce filtre.");
 		console.log("count", count);
 	})
 });

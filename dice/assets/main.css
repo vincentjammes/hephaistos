@@ -5,7 +5,7 @@ body {
     font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: white;
     text-align: center;
 }
@@ -45,4 +45,19 @@ div, .number {
     margin-right: 5%;
 }
 
+.annoucement {
+    color: white;
+    margin-top: 2%;
+    font-size: 20px;
+}
 
+.plus {
+    display: inline-block;
+    color: white;
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+.description {
+    font-size: 20px;
+}
