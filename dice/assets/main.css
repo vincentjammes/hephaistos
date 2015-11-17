@@ -58,6 +58,6 @@ div, .number {
     font-size: 24px;
 }
 
-.description {
-    font-size: 20px;
+.Pellet {
+    display: inline-block;
 }
