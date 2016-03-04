@@ -8,12 +8,17 @@ h2 {
 	margin: 2% 0% 2% 33%;
 }
 
+#block {
+	margin-top: 7%;
+}
+
 #phrase {
-	margin: 10% 10% 2% 10%;
+	margin: 5% 10% 2% 10%;
 	padding: 20px;
 	text-align: center;
 	background-color: white;
 	font-size: 20px;
+	border-radius: 35px;
 }
 
 .Btn {

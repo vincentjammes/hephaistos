@@ -1,8 +1,3 @@
-// function bloque(champ){
-//     champ.disabled = true; // le bloque
-//     setTimeout(function(){champ.disabled=false;}, 3000); // au bout de 3s le débloque
-// }
-
 function getDice() {
 	var $input = $('[name=howMuch]');
    	return $input.val();
