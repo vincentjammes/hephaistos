@@ -29,12 +29,12 @@ div, .number {
     display: inline-block;
     border-radius: 5px;
     border: none;
+    margin: 0 auto;
 }
 
 .input {
     width: 150px;
     background-color: white;
-
 }
 
 .results {
@@ -52,10 +52,17 @@ div, .number {
 
 .plus {
     display: inline-block;
-    color: white;
-    margin-left: 5px;
-    font-size: 24px;
-    font-weight: bolder;
+    color: black;
+    margin-left: -60px;
+    font-size: 18px;
+}
+
+#diceNumber {
+    margin-left: 30px;
+}
+
+#sortNumber {
+    margin-left: -15px;
 }
 
 .block_1 {
@@ -67,7 +74,19 @@ div, .number {
     display: inline-flex;
 }
 
-.dice-container{
+.Btn {
+    margin-top: 40px;
+    margin-left: 30px;
+    padding: 20px 45px;
+    font-size: 20px;
+}
+
+
+
+/*CSS Dices*/
+
+
+.dice-container {
     margin: 10px; 
 }
 
