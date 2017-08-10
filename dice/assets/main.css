@@ -3,6 +3,11 @@ body {
     font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 46px;
+    color: white;
+}
+
 h2, h3, h4 {
     color: white;
     text-align: center;

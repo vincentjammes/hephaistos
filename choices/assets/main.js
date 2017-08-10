@@ -3,11 +3,18 @@ var combattre = function (){
       var fort = confirm("Quel courage ! Etes-vous fort ?");
       var malin = confirm("Etes-vous malin ?");
       if(fort === true || malin === true) {
-        alert("Vous n'avez besoin que d'une des deux caractéristiques ! Vous avez battu le troll; bravo !");
-      } else {
-        alert("Vous n'êtes ni fort ni malin ? Eh bien, si vous étiez malin, vous n'auriez probablement pas essayé de combattre un troll. Vous perdez !");
-      }
+
+        function displayVals() {
+      var Values = $( ".answer" ).val();
+      $( "p" ).html( "<b>Single:</b> " +
+      " <b>Multiple:</b> ");
+}
+      //   alert("Vous n'avez besoin que d'une des deux caractéristiques ! Vous avez battu le troll; bravo !");
+      // } else {
+      //   alert("Vous n'êtes ni fort ni malin ? Eh bien, si vous étiez malin, vous n'auriez probablement pas essayé de combattre un troll. Vous perdez !");
+      // }
 };
+
 var soudoyer = function (){
     var argent = confirm("D'accord, nous allons payer le troll. Avez-vous de l'argent ?");
       var trollMonnaie = confirm("Est-ce que votre argent est en monnaie de Troll ?");
@@ -38,3 +45,19 @@ $(document).ready(function () {
     $(this).parent().parent().parent().attr('aria-hidden', true);
   })
 });
+
+var monster = {
+  name: "A",
+  size: 120,
+  weight: 88,
+  color: "green"
+};
+
+document.getElementById("monster").innerHTML = monster.name + " is " + monster.size + " feets.";
+
+
+
+
+
+
+

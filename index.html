@@ -23,6 +23,21 @@
             <p>Un jeu simple qui vous propose une citation de film. A vous de deviner de quel film elle a été tirée.</p>
             <p><a class="Btn Btn--validate" href="http://vincentjammes.github.io/hephaistos/quotes/" target="_blank">Quotes Project</a></p>
         </div>
+
+
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyAqbJPzwGxBRl1XvBdkPs3nJnLkbOT4jkM",
+            authDomain: "hephaistos-3c2bc.firebaseapp.com",
+            databaseURL: "https://hephaistos-3c2bc.firebaseio.com",
+            projectId: "hephaistos-3c2bc",
+            storageBucket: "hephaistos-3c2bc.appspot.com",
+            messagingSenderId: "991193933450"
+          };
+          firebase.initializeApp(config);
+        </script>
         <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </body>
