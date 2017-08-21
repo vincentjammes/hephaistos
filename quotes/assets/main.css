@@ -12,8 +12,8 @@ h2 {
 	margin-top: 7%;
 }
 
-#phrase {
-	margin: 5% 10% 2% 10%;
+.phrase {
+	margin: 2% 10% 2% 10%;
 	padding: 20px;
 	text-align: center;
 	background-color: white;
@@ -23,9 +23,15 @@ h2 {
 
 .Btn {
 	margin-left: 43%;
+	margin-bottom: 2%;
 }
 
-#picture {
+.picture {
 	width: 505px;
 	height: 600px;
+	margin-left: 33%;
+}
+
+.picture-none{
+	display: none;
 }

@@ -51,26 +51,22 @@ function getQuotes() {
             title : "Usual Suspects"
         }
     ];
-    
+
     var whichQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    $('#phrase').html(whichQuote.text);
-    $('#picture').attr('src', whichQuote.picture);
-    $('#title').html(whichQuote.title);
+    $('.phrase').html(whichQuote.text);
+    $('.picture').attr('src', whichQuote.picture);
+    $('.title').html(whichQuote.title);
+
+
 };
 
-$("#js-LaunchRightPanel").click(function() {
-    $('body').addClass('u-ovh');
-    $('#js-RightPanel').attr("aria-hidden", "false");
-    $('#js-RightPanelOverlay').attr("aria-hidden", "false");
+$( "#playButton" ).click(function() {
+  $( ".pictureBox" ).hide();
 });
 
-$("#js-CloseRightPanel").click(function() {
-    $('body').removeClass('u-ovh');
-    $('#js-RightPanel').attr("aria-hidden", "true");
-    $('#js-RightPanelOverlay').attr("aria-hidden", "true");
+$( "#resultButton" ).click(function() {
+  $( ".pictureBox" ).toggle('');
 });
-
-
 
 
 

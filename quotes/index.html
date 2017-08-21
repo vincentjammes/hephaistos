@@ -6,23 +6,22 @@
         <link type="text/css" rel="stylesheet" href="assets/main.css" />
     </head>
     <body>
-        <div id="js-RightPanel" class="Panel Panel--r" aria-labelledby="rightPanel" aria-hidden="true">
-            <header class="Panel-header">
-                <h3 class="Panel-title" id="title">Voici la réponse</h3>
-                <button id="js-CloseRightPanel" class="Btn Btn--raw PanelHeader-btn u-push" aria-label="close">&#10005;</button>
-            </header>
-            <div class="Panel-content">
-                <p class="u-mgt--0"><img src='' id="picture" /></p>
-            </div>
-        </div>
-        <div id="js-RightPanelOverlay" class="Overlay" aria-hidden="true"></div>
         <div id="block">
             <h2>Dans quel film peut-on entendre ?</h2>
-            <div id="phrase">Cliquez sur Jouer ...</div>        
-            <p><button class="Btn Btn--validate" onclick="getQuotes()">Jouer</button>
-               <button id="js-LaunchRightPanel" class="Btn Btn--alt">Réponse</button>
+            <div class="phrase">Cliquez sur Jouer ...</div>        
+            <p>
+                <button id="playButton" class="Btn Btn--validate" onclick="getQuotes()">Jouer</button>
+                <button id="resultButton" class="Btn Btn--info">Réponse</button>
             </p>
+            <div class="pictureBox picture-none"><img src='' class="picture" /></div>
         </div>
+
+<!--         <ul>
+            <li><button class="Btn Btn--primary Btn--inverted">Choix 1</button></li>
+            <li><button class="Btn Btn--primary Btn--inverted">Choix 2</button></li>
+            <li><button class="Btn Btn--primary Btn--inverted">Choix 3</button></li>
+        </ul> -->
+
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="assets/main.js"></script>
     </body>
