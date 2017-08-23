@@ -5,12 +5,13 @@ body {
 
 h1 {
     font-size: 46px;
-    color: white;
+    color: #ffffff;
 }
 
 h2, h3, h4 {
-    color: white;
+    color: #ffffff;
     text-align: center;
+    font-weight: normal;
 }
 
 h2{
@@ -26,6 +27,7 @@ em {
 
 div, .number {
     text-align: center;
+    font-weight: normal;
 }
 
 .input, .results {
@@ -50,8 +52,8 @@ div, .number {
 }
 
 .annoucement {
-    color: white;
-    margin-top: 2%;
+    color: #ffffff;
+    margin-top: 40px;
     font-size: 20px;
 }
 
@@ -86,13 +88,10 @@ div, .number {
     font-size: 20px;
 }
 
-
-
 /*CSS Dices*/
 
-
 .dice-container {
-    margin: 10px; 
+    margin: 0px 10px 10px 10px; 
 }
 
 div.dice {  
